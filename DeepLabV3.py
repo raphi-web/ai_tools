@@ -35,7 +35,7 @@ def get_DeepLab(input_img, classes=2):
     firstResidual = residual
 
 
-    x = SeparableConv2D(128, (3, 3), use_bias=False, padding="same")(x)
+    x = SeparableConv2D(128, (3, 3), use_bias=False, padding="same",activation="relu")(x) ######
     x = BatchNormalization()(x)
 
     x = SeparableConv2D(128, (3, 3), use_bias=False, activation="relu", padding="same")(x)
