@@ -203,6 +203,7 @@ def get_DeepLab(input_img, classes=2):
     return model
 
 
+
 if __name__ == "__main__":
     in_size = Input((512, 512, 3))
     model = get_DeepLab(in_size)
